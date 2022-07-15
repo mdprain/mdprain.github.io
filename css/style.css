@@ -195,7 +195,7 @@ form {
 
 .github-widget {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     font-style: italic;
     font-size: small;
     align-items: center;
@@ -204,7 +204,6 @@ form {
 }
 
 .gw-repo-outer {
-    width: 25%;
     margin: 5px;
 }
 
