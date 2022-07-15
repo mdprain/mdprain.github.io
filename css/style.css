@@ -106,7 +106,6 @@ i {
 #to-top {
     font-family: 'Inconsolata', monospace;
     font-weight: bolder;
-    font-size: large;
     background: local;
     display: none;
     position: fixed;
