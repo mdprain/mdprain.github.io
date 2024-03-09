@@ -1,0 +1,216 @@
+/* style.css */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Upper page */
+
+#title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#typing {
+    text-align: center;
+    font-size: larger;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+#top {
+    top: 0;
+    margin: auto;
+}
+
+/* Navigation bar */
+
+#menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.item {
+    font-size: larger;
+    position: relative;
+    height: 1em;
+    margin: 2%;
+}
+
+/* Main content */
+
+main {
+    width: 50%;
+    align-self: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+    line-height: 24px;
+    background-image: url('../images/bg.jpg');
+    background-color: #808080;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+#photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 2px;
+    margin-top: 20px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Lower page */
+
+#bottom {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    overflow-y: auto;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 80%;
+    line-height: 14px;
+}
+
+/* Icons */
+
+i {
+    font-size: x-large;
+}
+
+/* Buttons */
+
+#to-top {
+    font-family: 'Inconsolata', monospace;
+    font-weight: bolder;
+    background: local;
+    display: none;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    border: none;
+    padding: 5px;
+}
+
+.button, a {
+    font-weight: bolder;
+    color: #000000;
+    text-decoration: none;
+    outline: none;
+}
+
+.button:hover, a:hover, #to-top:hover, #input-button:hover {
+    color: #FFFFFF;
+}
+
+#active-button {
+    color: #FFFFFF;
+    text-decoration: none;
+    outline: none;
+}
+
+/* Animation */
+
+.animate {
+    animation: 1s fadein;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/* Videos on Music page */
+
+.video {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+
+.video-item {
+    margin: 10px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.video-item:hover {
+    filter: brightness(50%);
+}
+
+/* Contact form */
+
+form {
+    display: grid;
+    justify-items: center;
+}
+
+.input {
+    resize: none;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+#input-button {
+    font-family: 'Inconsolata', monospace;
+    font-weight: bolder;
+    font-size: large;
+    background: local;
+    border: none;
+    padding: 5px;
+}
+
+/* CSS for the GitHub widget */
+
+.github-widget {
+    display: flex;
+    flex-flow: column wrap;
+    font-style: italic;
+    font-size: small;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.gw-repo-outer {
+    margin: 5px;
+}
+
+.gw-title {
+    font-size: medium;
+}
+
+.gw-lang {
+    font-variant: small-caps;
+}
